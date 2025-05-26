@@ -30,7 +30,7 @@ Antes de começar, certifique-se de ter os seguintes itens instalados em sua má
 
 Clone este repositório para sua máquina local:
 
-```bash
+```sh
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 ```
@@ -44,7 +44,7 @@ cd seu-repositorio
 
 Copie o conteúdo de `.env_exemplo` para um novo arquivo chamado `.env`.
 
-```bash
+```sh
 cp .env_exemplo .env
 nano .env
 ```
@@ -94,16 +94,16 @@ As seguintes variáveis precisam ser configuradas no arquivo `.env`:
 - Substitua `SUA_KEY` em `AUTHENTICATION_API_KEY` por uma chave de API segura para o Evolution API.
 - Substitua `SUA_KEY` em `NGROK_AUTHTOKEN` pelo token obtido no passo 2.
 - Ajuste `POSTGRES_PASSWORD`, `N8N_BASIC_AUTH_USER` e `N8N_BASIC_AUTH_PASSWORD` para valores seguros de sua escolha.
-- Substitua sua SUA_KEY do ngrok no arquivo ngrok.yml
+- Substitua sua `SUA_KEY` do ngrok no arquivo `ngrok.yml`.
 
 **Importante:** Defina senhas seguras para o Postgres e o n8n.
-Se preferir, utilize o gerador de senhas do [LastPass](https://www.lastpass.com/pt/features/password-generator) 
+Se preferir, utilize o gerador de senhas do [LastPass](https://www.lastpass.com/pt/features/password-generator).
 
 ### 4. Inicie os Serviços
 
 Na raiz do projeto, execute o comando abaixo para subir todos os serviços:
 
-```bash
+```sh
 docker-compose up -d
 ```
 
@@ -140,13 +140,13 @@ Como este projeto utiliza o Ngrok, a URL pública gerada para o n8n muda a cada 
 
 Para parar os serviços, use:
 
-```bash
+```sh
 docker-compose down
 ```
 
 Para parar e remover os volumes (limpar dados), use:
 
-```bash
+```sh
 docker-compose down -v
 ```
 
